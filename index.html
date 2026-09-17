@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#4a0e20" />
+    <meta name="description" content="A private romantic website made with love." />
+    <title>For You ❤️</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <main id="main">
+      <!-- 1. Secret PIN -->
+      <section id="screen-pin" class="screen screen--pin is-active" aria-labelledby="pin-heading">
+        <div class="pin-deco" aria-hidden="true"></div>
+        <div class="pin-card">
+          <p class="pin-heart" aria-hidden="true">❤️</p>
+          <h1 id="pin-heading">Enter the secret code</h1>
+          <p class="pin-sub">A little secret, just for us.</p>
+          <div
+            id="pin-dots"
+            class="pin-dots"
+            role="status"
+            aria-live="polite"
+            aria-label="PIN digits entered"
+          ></div>
+          <p id="pin-error" class="pin-error" role="alert"></p>
+          <div id="keypad" class="keypad"></div>
+        </div>
+      </section>
+
+      <!-- 2. Flower bloom -->
+      <section id="screen-bloom" class="screen screen--bloom" aria-label="Blooming flowers" hidden>
+        <p class="sr-only">Flowers blooming across the screen.</p>
+        <div id="bloom-field" class="bloom-field" aria-hidden="true"></div>
+        <button type="button" class="btn btn--ghost continue-btn" data-next="memories">Continue</button>
+      </section>
+
+      <!-- 3. Photo memories -->
+      <section id="screen-memories" class="screen screen--memories" aria-labelledby="memories-heading" hidden>
+        <h1 id="memories-heading" class="script-heading">I love you so much ❤️</h1>
+        <div id="photo-table" class="photo-table"></div>
+        <button type="button" class="btn" data-next="letter">Continue</button>
+      </section>
+
+      <!-- 4. Love letter -->
+      <section id="screen-letter" class="screen screen--letter" aria-labelledby="letter-heading" hidden>
+        <article class="letter-card">
+          <h1 id="letter-heading" class="script-heading letter-greeting">My Loveyyyy,</h1>
+          <p id="letter-text" class="letter-body" aria-live="polite"></p>
+          <p class="sr-only" id="letter-full"></p>
+          <p class="letter-signoff">Forever and always ❤️</p>
+          <button type="button" class="btn" data-next="songs">Continue</button>
+        </article>
+      </section>
+
+      <!-- 5. Top songs -->
+      <section id="screen-songs" class="screen screen--songs" aria-labelledby="songs-heading" hidden>
+        <header class="songs-header">
+          <h1 id="songs-heading">Our Top Songs</h1>
+          <p class="script-heading songs-sub">The soundtrack of us</p>
+        </header>
+        <ul id="song-list" class="song-list"></ul>
+        <button type="button" class="btn" data-next="final">Continue</button>
+      </section>
+
+      <!-- 6–8. Floating hearts + final message -->
+      <section id="screen-final" class="screen screen--final" aria-labelledby="final-heading" hidden>
+        <div class="heart-field" data-hearts="true" aria-hidden="true"></div>
+        <h1 id="final-heading" class="final-message"></h1>
+        <p id="final-subtitle" class="final-subtitle"></p>
+      </section>
+
+     
+
+    <button
+      type="button"
+      id="music-toggle"
+      class="music-toggle"
+      hidden
+      aria-pressed="false"
+      aria-label="Play background music"
+    >
+      <span class="music-ring" aria-hidden="true"></span>
+      <span class="music-icon" aria-hidden="true">🎵</span>
+    </button>
+    <audio id="bg-audio" loop preload="none"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

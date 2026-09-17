@@ -465,7 +465,7 @@ function renderSongs() {
     const item = document.createElement("li");
     const link = document.createElement("a");
     link.className = "song-card";
-    link.href = song.url || "https://open.spotify.com/";
+    link.href = song.url || "https://www.youtube.com/";
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.style.animationDelay = 0.12 * index + "s";

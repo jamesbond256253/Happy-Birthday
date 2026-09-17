@@ -53,19 +53,19 @@ const SONGS = [
     title: "Those eyes",
     artist: "New West",
     image: "c1.jpg",
-    url: "https://open.spotify.com/track/50x1Ic8CaXkYNvjmxe3WXy?si=18c10e13297d416b"
+    url: "https://youtu.be/b_CpWmkhwq0?si=FepnYUsJ7_saZ1d4"
   },
   {
     title: "Fall On Me",
     artist: "Andrea Bocelli, Matteo Bocelli",
     image: "c2.png",
-    url: "https://open.spotify.com/track/3iOqivy61CFqjcvAbcAU9u?si=8338bf0093f34905"
+    url: "https://youtu.be/ChcR2gKt5WM?si=oh6bPDuSDVjJiPOK"
   },
   {
     title: "Invisible String",
     artist: "Taylor Swift",
     image: "c3.jpg",
-    url: "https://open.spotify.com/track/6VsvKPJ4xjVNKpI8VVZ3SV?si=44488ed0fa3141e4",
+    url: "https://youtu.be/OuFnpmGwg5k?si=Ua4_-cpdVZ5TP1lh",
   }
 ];
 
